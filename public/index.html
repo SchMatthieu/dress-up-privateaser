@@ -1,23 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>CSS/HTML Workshop with Privateaser</title>
+    <title>Course 2</title>
+
+    <link rel="icon" type="image/png" href="images/icons/Logo_Privateaser.png"/>
+
+  	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
+  	<link rel="stylesheet" type="text/css" href="css/util.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
     <script src="index.js"></script>
+    <script src="privateaser.js"></script>
+
+    <div class="container-contact100">
+  		<div class="wrap-contact100">
+  			<form class="contact100-form validate-form">
+  				<span class="contact100-form-title">
+  					Privateaser
+  				</span>
+
+  				<label class="label-input100">Bar informations *</label>
+          <div class="wrap-input100">
+  					<input class="input100 js-name" type="text" name="bar-name" placeholder="Bar name">
+  					<span class="focus-input100"></span>
+  				</div>
+  				<div class="wrap-input100 rs1-wrap-input100">
+  					<input class="input100 js-price-by-hour" type="text" name="price-by-hour" placeholder="Price by hour">
+  					<span class="focus-input100"></span>
+  				</div>
+  				<div class="wrap-input100 rs2-wrap-input100">
+  					<input class="input100 js-price-by-person" type="text" name="price-by-person" placeholder="Price by person">
+  					<span class="focus-input100"></span>
+  				</div>
+
+  				<label class="label-input100">Booker informations *</label>
+  				<div class="wrap-input100">
+  					<input class="input100 js-name" type="text" name="booker-name" placeholder="Booker name">
+  					<span class="focus-input100"></span>
+  				</div>
+          <div class="wrap-input100 rs1-wrap-input100">
+  					<input class="input100 js-time" type="number" name="time" placeholder="Time in h">
+  					<span class="focus-input100"></span>
+  				</div>
+  				<div class="wrap-input100 rs2-wrap-input100">
+  					<input class="input100 js-persons" type="number" name="persons" placeholder="Persons">
+  					<span class="focus-input100"></span>
+  				</div>
+          <div class="wrap-input100">
+            <label class="label-input100"><span>Deductible option</span><input class="option js-option" type="checkbox" name="phone" placeholder="Deductible option"></label>
+  				</div>
+
+  				<div class="container-contact100-form-btn">
+  					<button id="compute" class="contact100-form-btn">
+  						Validate
+  					</button>
+  				</div>
+          <div id="actors"></div>
+  			</form>
+
+  			<div class="contact100-more flex-col-c-m" style="background-image: url('https://static.restovisio.com/uploads/2016/05/Privateaser.jpg');">
+  				<div class="flex-w size1 p-b-47">
+  					<div class="txt1 p-r-25">
+  						<span class="lnr lnr-map-marker"></span>
+  					</div>
+
+  					<div class="flex-col size2">
+  						<span class="txt1 p-b-20">
+  							Address
+  						</span>
+
+  						<span class="txt2">
+  							21 bis Rue de Bruxelles, 75009 Paris
+  						</span>
+  					</div>
+  				</div>
+
+  				<div class="dis-flex size1 p-b-47">
+  					<div class="txt1 p-r-25">
+  						<span class="lnr lnr-phone-handset"></span>
+  					</div>
+
+  					<div class="flex-col size2">
+  						<span class="txt1 p-b-20">
+  							Lets Talk
+  						</span>
+
+  						<span class="txt3">
+  							 01 76 42 03 86
+  						</span>
+  					</div>
+  				</div>
+
+  				<div class="dis-flex size1 p-b-47">
+  					<div class="txt1 p-r-25">
+  						<span class="lnr lnr-envelope"></span>
+  					</div>
+
+  					<div class="flex-col size2">
+  						<span class="txt1 p-b-20">
+  							General Support
+  						</span>
+
+  						<span class="txt3">
+  							 contact@privateaser.com
+  						</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  	<div id="dropDownSelect1"></div>
   </body>
 </html>
