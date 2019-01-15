@@ -19,8 +19,6 @@
   	<link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <script src="index.js"></script>
-    <script src="privateaser.js"></script>
 
     <div class="container-contact100">
   		<div class="wrap-contact100">
@@ -31,7 +29,7 @@
 
   				<label class="label-input100">Bar informations *</label>
           <div class="wrap-input100">
-  					<input class="input100 js-name" type="text" name="bar-name" placeholder="Bar name">
+  					<input class="input100 js-bar-name" type="text" name="bar-name" placeholder="Bar name">
   					<span class="focus-input100"></span>
   				</div>
   				<div class="wrap-input100 rs1-wrap-input100">
@@ -45,7 +43,7 @@
 
   				<label class="label-input100">Booker informations *</label>
   				<div class="wrap-input100">
-  					<input class="input100 js-name" type="text" name="booker-name" placeholder="Booker name">
+  					<input class="input100 js-booker-name" type="text" name="booker-name" placeholder="Booker name">
   					<span class="focus-input100"></span>
   				</div>
           <div class="wrap-input100 rs1-wrap-input100">
@@ -61,9 +59,9 @@
   				</div>
 
   				<div class="container-contact100-form-btn">
-  					<button id="compute" class="contact100-form-btn">
+  					<span id="compute" class="contact100-form-btn">
   						Validate
-  					</button>
+  					</span>
   				</div>
           <div id="actors"></div>
   			</form>
@@ -121,5 +119,8 @@
   	</div>
 
   	<div id="dropDownSelect1"></div>
+
+    <script src="index.js"></script>
+    <script src="privateaser.js"></script>
   </body>
 </html>
